@@ -1,19 +1,37 @@
-@import "fonts";
+@import 'fonts';
 @import 'helpers/variables';
 @import 'helpers/placeholders';
 @import 'helpers/mixins.scss';
 @import './normalize';
 @import './base';
 
-
-section{
-
+.banner {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  background-image: url(../images/hbackground-mobile.jpg);
+  background-size: cover;
 }
-.container{
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation__list {
+  display: none;
+  list-style: none;
+}
+
+section {
+}
+.container {
   max-width: 1234px;
   padding: 0 20px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 
 .company{
   margin-top: 20px;
@@ -30,4 +48,13 @@ section{
 }
 .company__image img{
   height: 496px;
+=======
+.company {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.company__image img {
+  height: 320px;
+>>>>>>> 827328f329ecf1eaf98d62caec94984559a5f6af
 }
