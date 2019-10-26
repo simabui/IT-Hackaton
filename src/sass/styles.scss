@@ -5,6 +5,12 @@
 @import './normalize';
 @import './base';
 
+.container {
+  max-width: 1234px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .banner {
   display: block;
   position: relative;
@@ -24,12 +30,28 @@
   list-style: none;
 }
 
-section {
+.header-button {
+  display: none;
 }
-.container {
-  max-width: 1234px;
-  padding: 0 20px;
-  margin: 0 auto;
+
+.banner-title {
+  font-family: 'OpenSans';
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 275px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.banner-info {
+  font-size: 16px;
+}
+
+section {
 }
 .company {
   display: flex;
