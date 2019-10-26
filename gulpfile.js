@@ -126,8 +126,8 @@ function fonts() {
 }
 
 function watcher(done) {
-  // watch('src/**/*.html').on('change', series(html, server.reload));
-  watch('src/**/*.pug').on('change', series(pugs, server.reload));
+  watch('src/**/*.html').on('change', series(html, server.reload));
+  // watch('src/**/*.pug').on('change', series(pugs, server.reload));
   watch('src/sass/**/*.scss').on('change', series(styles, server.reload));
   watch('src/js/**/*.js').on('change', series(scripts, server.reload));
 
@@ -153,7 +153,7 @@ function clean() {
 
 const build = series(
   clean,
-  parallel(sprite, images, fonts, pugs, styles, scripts),
+  parallel(sprite, images, fonts, html, styles, scripts),
 );
 
 const start = series(build, watcher, serve);
