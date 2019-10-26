@@ -14,11 +14,20 @@ section{
   padding: 0 20px;
   margin: 0 auto;
 }
+
 .company{
+  margin-top: 20px;
 	display: flex;
-  	flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
+.company::after{
+  content: "\201C";
+  display: block;
+  font-family: $proxima-font;
+  color: $main-accent-color;
+  font-size: 60px;
+}
 .company__image img{
-  height: 320px;
+  height: 496px;
 }
