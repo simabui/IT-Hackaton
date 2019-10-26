@@ -17,7 +17,6 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
-<<<<<<< HEAD
 const cache = require('gulp-cache');
 const pug = require('gulp-pug');
 const smartgrid = require('smart-grid');
@@ -52,10 +51,7 @@ var settings = {
 
 smartgrid('./src/sass/helpers', settings); //edit row-offsets
 
-=======
-const server = require('browser-sync').create();
 
->>>>>>> origin/header
 function html() {
   return src('src/*.html')
     .pipe(rigger())
@@ -63,7 +59,6 @@ function html() {
     .pipe(dest('build'));
 }
 
-<<<<<<< HEAD
 function pugs() {
   return src('src/pug/index.pug')
     .pipe(
@@ -75,8 +70,6 @@ function pugs() {
     .pipe(dest('build'));
 }
 
-=======
->>>>>>> origin/header
 function styles() {
   return src('src/sass/styles.scss')
     .pipe(plumber())
@@ -107,33 +100,16 @@ function scripts() {
 }
 
 function sprite() {
-<<<<<<< HEAD
-  return src('src/images/icons/**/*.svg')
-    .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename('sprite.svg'))
-    .pipe(dest('build/images/icons'));
-=======
   return src('src/images/icons/icon-*.svg')
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('sprite.svg'))
     .pipe(dest('build/images'));
->>>>>>> origin/header
 }
 
 function images() {
   return src(['src/images/**/*.{png,jpg,jpeg,svg}', '!src/images/icons/**/*'])
     .pipe(
-<<<<<<< HEAD
-      cache(
-        imagemin([
-          imagemin.jpegtran({ progressive: true }),
-          imagemin.optipng({ optimizationLevel: 3 }),
-          imagemin.svgo({
-            plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
-          }),
-        ]),
-      ),
-=======
+
       imagemin([
         imagemin.jpegtran({ progressive: true }),
         imagemin.optipng({ optimizationLevel: 3 }),
@@ -141,7 +117,6 @@ function images() {
           plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
         }),
       ]),
->>>>>>> origin/header
     )
     .pipe(dest('build/images'));
 }
@@ -152,10 +127,7 @@ function fonts() {
 
 function watcher(done) {
   watch('src/**/*.html').on('change', series(html, server.reload));
-<<<<<<< HEAD
   // watch('src/**/*.pug').on('change', series(pugs, server.reload));
-=======
->>>>>>> origin/header
   watch('src/sass/**/*.scss').on('change', series(styles, server.reload));
   watch('src/js/**/*.js').on('change', series(scripts, server.reload));
 
@@ -179,13 +151,10 @@ function clean() {
   return del('./build');
 }
 
-<<<<<<< HEAD
-=======
 function prepare() {
   return del(['**/.gitkeep', 'README.md']);
 }
 
->>>>>>> origin/header
 const build = series(
   clean,
   parallel(sprite, images, fonts, html, styles, scripts),
@@ -193,10 +162,7 @@ const build = series(
 
 const start = series(build, watcher, serve);
 
-<<<<<<< HEAD
 // exports.prepare = prepare;
-=======
 exports.prepare = prepare;
->>>>>>> origin/header
 exports.build = build;
 exports.start = start;
