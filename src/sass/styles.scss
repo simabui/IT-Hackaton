@@ -253,7 +253,7 @@ $icons: globe, hands, hi, money, pencil, file, aim;
 @include generate-pseudo-icons('services__logo-', $icons, '../images/services/services-', png);
 .services__item{
   border-radius: 10px;
-  flex-basis: 300px;
+  flex-basis: 280px;
   padding: 0px 23px 0px 46px;
 }
 .services__description{
@@ -263,5 +263,61 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   font-size: 14px;
   line-height: 20px;
   color: #464646;
+}
+//structure section
+
+.structure {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  
+  &__item {
+    flex-basis: 280px;
+    margin-top: 20px;
+    padding: 20px;
+    height: 258px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  
+  &__title {
+    font-family: $main-font-stack;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  &__description {
+    font-family: $main-font-stack;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #464646;
+    margin-top: 20px;
+  }
+  
+  &__item-tech {
+    background-color: #f6ead0;
+  }
+  
+  &__item-soft {
+    background-color: #fbdcd2;
+  }
+  
+  &__item-it {
+    background-color: #e2d8f5;
+  }
+  
+  &__item-hack {
+    background-color: #c8eae8;
+  }
+}
+
+.structure__item-dash{
+  border: 1px dashed #fff;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 20px;
+  height: 227px;
 }
 
