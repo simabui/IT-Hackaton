@@ -1,24 +1,32 @@
-@import "fonts";
+@import 'fonts';
 @import 'helpers/variables';
 @import 'helpers/placeholders';
 @import 'helpers/mixins.scss';
 @import './normalize';
 @import './base';
 
-
-section{
-
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
 }
-.container{
+
+.site-navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+section {
+}
+.container {
   max-width: 1234px;
   padding: 0 20px;
   margin: 0 auto;
 }
-.company{
-	display: flex;
-  	flex-direction: column-reverse;
+.company {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.company__image img{
+.company__image img {
   height: 320px;
 }
