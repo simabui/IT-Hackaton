@@ -53,11 +53,37 @@ h1 {
 
 section {
 }
+
 .company {
+  margin-top: 20px;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.company__image img {
+.company::after {
+  content: '\201C';
+  display: block;
+  font-family: $proxima-font;
+  color: $main-accent-color;
+  font-size: 60px;
+  line-height: 40px;
+}
+
+.company__image {
+  margin-top: 20px;
+  width: 280px;
   height: 320px;
+  border-radius: 10px;
+  background-image: url(../images/kids.jpg);
+  background-size: cover;
+}
+
+.company__description p {
+  font-family: $main-font-stack;
+  color: #464646;
+  font-size: 14px;
+}
+
+.company__description p:last-child {
+  margin-top: 10px;
 }
