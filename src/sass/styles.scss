@@ -26,35 +26,31 @@
 
 section {
 }
+
 .container {
   max-width: 1234px;
   padding: 0 20px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
 
-.company{
+.company {
   margin-top: 20px;
-	display: flex;
+  display: flex;
   flex-direction: column-reverse;
 }
 
-.company::after{
+.company::after {
   content: "\201C";
   display: block;
   font-family: $proxima-font;
   color: $main-accent-color;
   font-size: 60px;
 }
-.company__image img{
-  height: 496px;
-=======
-.company {
-  display: flex;
-  flex-direction: column-reverse;
-}
 
 .company__image img {
   height: 320px;
->>>>>>> 827328f329ecf1eaf98d62caec94984559a5f6af
+}
+
+.company__description{
+  font-family: $main-font-stack;
 }
