@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 html {
   -webkit-box-sizing: border-box;
@@ -51,3 +52,24 @@ input[type="”radio”"].visually-hidden {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+=======
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font-stack;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+>>>>>>> origin/header

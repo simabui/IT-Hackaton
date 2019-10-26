@@ -1,4 +1,10 @@
 @import "fonts";
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins.scss';
+@import './normalize';
+@import './base';
+
 :root {
   --kaushan-font: "Kaushan Script", cursive;
   --montserrat-font: "Montserrat", sans-serif;
@@ -19,5 +25,3 @@ section{
 .company{
 
 }
-
-
