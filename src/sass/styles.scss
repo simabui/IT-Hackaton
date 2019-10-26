@@ -14,5 +14,6 @@ section{
   margin: 0 auto;
 }
 .company{
-
+	display: flex;
+  	flex-direction: column-reverse;
 }
