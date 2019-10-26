@@ -57,13 +57,21 @@ section {
   background-size: cover;
 }
 
-.company__description p{
+.company__text p{
   font-family: $main-font-stack;
   color: #464646;
   font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-.company__description p:last-child{
+.company_text p:last-child{
   margin-top: 10px;
 }
+
+.company__description{
+  background-color: #7550de;
+}
+
+
 
