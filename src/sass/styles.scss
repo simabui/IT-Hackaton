@@ -5,13 +5,22 @@
 @import './normalize';
 @import './base';
 
+.banner {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  background-image: url(../images/hbackground-mobile.jpg);
+  background-size: cover;
+}
+
 .site-navigation {
   display: flex;
   justify-content: space-between;
 }
 
 .site-navigation__list {
-  display: flex;
+  display: none;
   list-style: none;
 }
 
