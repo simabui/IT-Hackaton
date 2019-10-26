@@ -117,6 +117,89 @@ h1 {
   margin: 30px auto;
 }
 
+.section__title{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
 
 
 
+.section__title-icon{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: $main-accent-color;
+  background-image: url("../images/icon-fields.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.section__title-text{
+  font-family: $second-font-stack;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+//fields section
+.fields__list{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fields__item{
+  border-radius: 10px;
+  padding-left: 46px;
+  padding-bottom: 23px;
+}
+
+
+.fields__item-title{
+  margin-top: 26px;
+  font-family: $main-font-stack;
+  font-weight: 700;
+  font-size: 25px;
+  color: #272727;
+}
+
+.fields__item-description{
+  margin-top: 30px;
+  font-family: $main-font-stack;
+  font-weight: 400;
+  font-size: 16px;
+  color: #272727;
+}
+
+.fields__item-price{
+  margin-top: 40px;
+  font-family: $second-font-stack;
+  font-weight: 700;
+  font-size: 30px;
+  color: $main-accent-color;
+  position: relative;
+}
+.fields__item-price::after{
+  content: 'років';
+  font-size: 13px;
+  position: absolute;
+  top: -10px;
+  text-decoration: underline;
+}
+
+.fields__item-arrow{
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: $main-accent-color;
+}
+
+.fields__item:hover{
+  background-color: $main-accent-color;
+  
+  .fields__item-description,.fields__item-price, .fields__item-arrow{
+    color: #fff;
+  }
+}
