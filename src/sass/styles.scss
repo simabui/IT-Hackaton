@@ -68,16 +68,14 @@
   cursor: pointer;
 }
 
-section {
-}
-
+//SECTION company
 .company {
   margin-top: 20px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
-.company::after {
+.company::before {
   content: '\201C';
   display: block;
   font-family: $proxima-font;
@@ -95,12 +93,39 @@ section {
   background-size: cover;
 }
 
-.company__description p {
+.company__text p {
   font-family: $main-font-stack;
   color: #464646;
   font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-.company__description p:last-child {
+.company_text p:last-child {
   margin-top: 10px;
+}
+
+.company_description {
+  background-color: #7550de;
+  display: block;
+  max-width: 100%;
+  height: 230px;
+  margin-top: 42px;
+  text-align: center;
+}
+
+.company_description p {
+  font-family: $main-font-stack;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.company_description p:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: $main-accent-color;
+  margin: 0 auto;
 }
