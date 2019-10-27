@@ -538,15 +538,15 @@ img {
 .modal__img {
   position: absolute;
   max-width: 100%;
-  top: 40px;
-  left: 40px;
+  top: 4%;
+  left: 4%;
 }
 
 .modal__close {
   display: block;
   position: absolute;
-  right: 40px;
-  top: 48px;
+  right: 10%;
+  top: 7%;
 }
 
 .modal__close-line {
@@ -599,8 +599,8 @@ header {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  right: 0;
-  transform: translateX(-20px);
+  right: 10%;
+  top: 50%;
   border: none;
   width: 29px;
   height: 20px;
@@ -614,6 +614,11 @@ header {
 
 .burger__menu:not(:last-child) {
   margin-bottom: 4px;
+}
+
+.site-logo {
+  margin-left: 22px;
+  margin-top: 12px;
 }
 
 .site-navigation__list {
@@ -1019,16 +1024,19 @@ header {
   height: 227px;
 }
 
+.footer {
+  margin-top: 59px;
+  background-color: #222222;
+}
+
 .page-footer {
   display: flex;
   position: relative;
   min-height: 470px;
-  background-color: #222222;
-  margin-top: 59px;
 }
 
 .contacts {
-  padding-left: 64px;
+  padding-left: 23px;
   padding-top: 42px;
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
@@ -1063,9 +1071,15 @@ header {
   margin-bottom: 33px;
 }
 
+.socials-links {
+  width: 152px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .socials-links__icon {
-  width: 37px;
-  height: 37px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -1100,7 +1114,7 @@ header {
 }
 
 .footer-under__info {
-  margin-left: 44px;
+  margin: 0 auto;
   width: 236px;
   padding-top: 10px;
   display: flex;
@@ -1113,6 +1127,10 @@ header {
   line-height: 25px;
   font-family: "Open Sans", sans-serif;
   color: #626263;
+}
+
+.arrow {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1218,6 +1236,7 @@ header {
     font-weight: 700;
     font-size: 30px;
     color: #fff;
+    text-decoration: none;
   }
 
   .page-footer {
@@ -1242,6 +1261,7 @@ header {
 
   .page-adress {
     width: 192px;
+    margin-top: 0;
   }
 
   .contacts-list {
@@ -1254,10 +1274,6 @@ header {
 
   .socials-links {
     display: flex;
-  }
-
-  .socials-links__icon--telegram {
-    margin-left: 20px;
   }
 
   .footer-under {
@@ -1304,11 +1320,6 @@ header {
 
   .burger {
     display: none;
-  }
-
-  .site-logo {
-    margin-left: 22px;
-    margin-top: 12px;
   }
 
   .site-navigation {
@@ -1399,6 +1410,10 @@ header {
     width: 50%;
     display: flex;
     justify-content: space-around;
+  }
+
+  .footer-under__info {
+    margin-left: 0;
   }
 }
 

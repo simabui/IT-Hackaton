@@ -14,7 +14,11 @@
       <div class="modal">
         <nav class="modal-navigation">
           <div class="modal__img">
-            <img src="images/Logo.png" alt="logo" />
+            <img
+              src="images/Logo.png"
+              srcset="images/Logo.png 1x, images/Logo@2x.png 2x"
+              alt="logo"
+            />
           </div>
           <ul class="modal-navigation__list">
             <li><a href="#" class="modal-navigation__item">Front-End</a></li>
@@ -41,6 +45,7 @@
             <a href="#">
               <img
                 src="images/Logo.png"
+                srcset="images/Logo.png 1x, images/Logo@2x.png 2x"
                 alt="site-logo"
                 width="143"
                 height="37"
@@ -311,43 +316,49 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="page-footer">
-        <div class="contacts container">
-          <div class="footer-logo">
-            <a href="#">
-              <img
-                src="images/Logo.png"
-                alt="site-logo"
-                width="100"
-                height="26"
-              />
-            </a>
-          </div>
-          <div class="contacts-info">
-            <address class="page-adress">
-              01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки
-            </address>
-            <ul class="contacts-list">
-              <li>
-                <a href="mail:contact@goiteens.ua">contact@goiteens.ua</a>
-              </li>
-              <li><a href="tel:+380933432127">+38 093 343 21 27</a></li>
-              <li><a href="tel:+380673269592">+38 067 326 95 92</a></li>
-              <li><a href="tel:+380503661777">+38 050 366 17 77</a></li>
-            </ul>
-            <div class="footer-nav">
-              <button class="footer-button">Залишити заявку</button>
-              <div class="socials-links">
-                <button
-                  class="socials-links__icon socials-links__icon--telegram"
-                ></button>
-                <button
-                  class="socials-links__icon  socials-links__icon--facebook"
-                ></button>
-                <button
-                  class="socials-links__icon socials-links__icon--youtube"
-                ></button>
+    <footer class="footer">
+      <div class="container">
+        <div class="page-footer">
+          <div class="contacts ">
+            <div class="footer-logo">
+              <a href="#">
+                <img
+                  src="images/Logo.png"
+                  srcset="images/Logo.png 1x, images/Logo@2x.png 2x"
+                  alt="site-logo"
+                  width="100"
+                  height="26"
+                />
+              </a>
+            </div>
+            <div class="contacts-info">
+              <address class="page-adress">
+                01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки
+              </address>
+              <ul class="contacts-list">
+                <li>
+                  <a href="mail:contact@goiteens.ua">contact@goiteens.ua</a>
+                </li>
+                <li><a href="tel:+380933432127">+38 093 343 21 27</a></li>
+                <li><a href="tel:+380673269592">+38 067 326 95 92</a></li>
+                <li><a href="tel:+380503661777">+38 050 366 17 77</a></li>
+              </ul>
+              <div class="footer-nav">
+                <button class="footer-button">Залишити заявку</button>
+                <div class="socials-links">
+                  <a
+                    href="#"
+                    class="socials-links__icon socials-links__icon--telegram"
+                  ></a>
+                  <a
+                    href="#"
+                    class="socials-links__icon  socials-links__icon--facebook"
+                  ></a>
+                  <a
+                    href="#"
+                    class="socials-links__icon socials-links__icon--youtube"
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -365,9 +376,7 @@
         </div>
       </div>
     </footer>
-    <a href="#">
-      <div class="arrow arrow__up">↑</div>
-    </a>
+    <div class="arrow "><a class="arrow__up" href="#">↑</a></div>
   </body>
   <script>
     document.querySelector('.burger').addEventListener('click', () => {

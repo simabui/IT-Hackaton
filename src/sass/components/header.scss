@@ -23,8 +23,8 @@ header {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  right: 0;
-  transform: translateX(-20px);
+  right: 10%;
+  top: 50%;
   border: none;
   width: 29px;
   height: 20px;
@@ -38,6 +38,11 @@ header {
 
 .burger__menu:not(:last-child) {
   margin-bottom: 4px;
+}
+
+.site-logo {
+  margin-left: 22px;
+  margin-top: 12px;
 }
 
 .site-navigation__list {
@@ -149,11 +154,6 @@ header {
 
   .burger {
     display: none;
-  }
-
-  .site-logo {
-    margin-left: 22px;
-    margin-top: 12px;
   }
 
   .site-navigation {
