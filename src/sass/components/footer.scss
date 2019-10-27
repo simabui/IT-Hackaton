@@ -1,0 +1,90 @@
+// FOOTER ==============
+.page-footer {
+  display: flex;
+  position: relative;
+  min-height: 470px;
+  background-color: #222222;
+  margin-top: 59px;
+}
+
+.contacts {
+  padding-left: 64px;
+  padding-top: 42px;
+  font-family: $main-font-stack;
+  font-size: 14px;
+  line-height: 25px;
+  color: #9699a6;
+}
+
+.page-adress {
+  margin-top: 15px;
+  margin-bottom: 34px;
+}
+
+.contacts-list a {
+  font-size: 14px;
+  line-height: 25px;
+  color: #9699a6;
+  font-family: $main-font-stack;
+  text-decoration: none;
+}
+
+.footer-button {
+  width: 192px;
+  height: 43px;
+  font-size: 16px;
+  font-family: $second-font-stack;
+  color: #f6f9fa;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9ac38;
+  margin-top: 34px;
+  margin-bottom: 33px;
+}
+
+.socials-links__icon {
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  scroll-margin-bottom: 34px;
+}
+
+.socials-links__icon:not(:last-child) {
+  margin-right: 17px;
+}
+
+.socials-links__icon--telegram {
+  background-image: url(../images/telegram.png);
+  background-color: #6398e0;
+}
+
+.socials-links__icon--facebook {
+  background-image: url(../images/Facebook.png);
+  background-color: #3b4e70;
+}
+
+.socials-links__icon--youtube {
+  background-image: url(../images/Youtube.png);
+  background-color: #9f2431;
+}
+
+.footer-under {
+  min-height: 100px;
+  background-color: #151515;
+  bottom: 0;
+}
+
+.footer-under__info {
+  margin-left: 44px;
+  width: 236px;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 25px;
+  font-family: $second-font-stack;
+  color: #626263;
+}
