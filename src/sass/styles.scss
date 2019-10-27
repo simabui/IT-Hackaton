@@ -22,7 +22,34 @@
 
 .site-navigation {
   display: flex;
+  font-family: $second-font-stack;
   justify-content: space-between;
+  padding-top: 10px;
+}
+
+.checkbox {
+  position: absolute;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  //align-items: space-between;
+  right: 0;
+  transform: translateX(-20px);
+  border: none;
+  width: 29px;
+  height: 20px;
+}
+
+.checkbox__menu {
+  width: 29px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.checkbox__menu:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .site-navigation__list {
@@ -35,7 +62,8 @@
 }
 
 .banner-title {
-  font-family: 'Open Sans';
+  position: relative;
+  font-family: $second-font-stack;
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -43,14 +71,38 @@
   margin-top: 275px;
 }
 
-h1 {
+.title {
   font-size: 35px;
 }
 
 .banner-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 281px;
+  height: 55px;
+  background-color: rgba(22, 24, 32, 0.68);
   font-size: 16px;
+  padding-top: 10px;
 }
 
+.banner-info a {
+  font-family: $main-font-stack;
+  font-weight: 700;
+  text-decoration: none;
+  color: #d49e37;
+  cursor: pointer;
+}
+
+.scroll {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 36px;
+  bottom: 50px;
+}
 
 //SECTION company
 .company {
@@ -198,13 +250,14 @@ h1 {
   color: $main-accent-color;
 }
 
-.fields__item:hover{
+.fields__item:hover {
   background-color: $main-accent-color;
   
-  .fields__item-description,.fields__item-price, .fields__item-arrow{
+  .fields__item-description, .fields__item-price, .fields__item-arrow {
     color: #fff;
   }
 }
+
 //section services
 
 .services{
@@ -325,4 +378,6 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   padding: 20px;
   height: 227px;
 }
+
+
 
