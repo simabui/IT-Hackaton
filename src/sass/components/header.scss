@@ -15,14 +15,6 @@
   padding-top: 10px;
 }
 
-.burger-menu {
-  display: flex;
-  position: relative;
-  font-family: $second-font-stack;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-
 .burger {
   position: absolute;
   background-color: transparent;
@@ -34,6 +26,14 @@
   width: 29px;
   height: 20px;
 }
+
+// .burger-menu {
+//   display: flex;
+//   position: relative;
+//   font-family: $second-font-stack;
+//   justify-content: space-between;
+//   padding-top: 10px;
+// }
 
 .burger__menu {
   width: 29px;

@@ -1,293 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GOITeens</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="banner">
-        <div class="banner-menu container">
-          <div class="site-logo">
-            <a href="#">
-              <img
-                src="images/Logo.png"
-                alt="site-logo"
-                width="143"
-                height="37"
-              />
-            </a>
-          </div>
-          <button class="burger">
-            <div class="burger__menu"></div>
-            <div class="burger__menu"></div>
-            <div class="burger__menu"></div>
-          </button>
-          <nav class="site-navigation">
-            <ul class="site-navigation__list">
-              <li><a href="#" class="site-navigation__item">Front-End</a></li>
-              <li><a href="#" class="site-navigation__item">Game Dev</a></li>
-              <li>
-                <a href="#" class="site-navigation__item">Smart Design</a>
-              </li>
-              <li>
-                <a href="#" class="site-navigation__item">GoStart Kids</a>
-              </li>
-              <li><a href="#" class="site-navigation__item">Вакансії</a></li>
-              <li><a href="#" class="site-navigation__item">Контакти</a></li>
-              <button class="button header-button">Залишити заявку</button>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GOITeens</title>
+  <link rel="stylesheet" href="css/styles.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="banner">
+      <div class="banner-menu container">
+        <div class="site-logo">
+          <a href="#">
+            <img src="images/Logo.png" alt="site-logo" width="143" height="37" />
+          </a>
         </div>
-        <div class="banner-title container">
-          <h1 class="title">Наша місія</h1>
-          <div class="banner-info">
+        <button class="burger">
+          <div class="burger__menu"></div>
+          <div class="burger__menu"></div>
+          <div class="burger__menu"></div>
+        </button>
+        <nav class="site-navigation">
+          <ul class="site-navigation__list">
+            <li><a href="#" class="site-navigation__item">Front-End</a></li>
+            <li><a href="#" class="site-navigation__item">Game Dev</a></li>
+            <li>
+              <a href="#" class="site-navigation__item">Smart Design</a>
+            </li>
+            <li>
+              <a href="#" class="site-navigation__item">GoStart Kids</a>
+            </li>
+            <li><a href="#" class="site-navigation__item">Вакансії</a></li>
+            <li><a href="#" class="site-navigation__item">Контакти</a></li>
+            <button class="button header-button">Залишити заявку</button>
+          </ul>
+        </nav>
+      </div>
+      <div class="banner-title container">
+        <h1 class="title">Наша місія</h1>
+        <div class="banner-info">
+          <p>
+            Допомогти кожному підлітку створити свою
+            <a href="#">історію успіху</a>
+          </p>
+        </div>
+      </div>
+      <bottom class="scroll">>></bottom>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="company">
+          <div class="company__text">
             <p>
-              Допомогти кожному підлітку створити свою
-              <a href="#">історію успіху</a>
+              За останні 5 років кількість дітей, які вміють користуватися
+              комп'ютером, збільшилася приблизно в 10 разів.
+            </p>
+            <p>
+              Як зазначає більшість дослідників, ці тенденції будуть
+              прискорюватися незалежно від шкільної освіти.
             </p>
           </div>
+          <!--        <div class="company__image">-->
+          <!--        </div>-->
+          <picture>
+            <source srcset="images/kids-desktop.jpg" media="(min-width: 1920px)" />
+            <source srcset="images/kids-tablet.jpg" media="(min-width: 768px)" />
+            <img src="images/kids-mobile.jpg" alt="kids" />
+          </picture>
         </div>
-        <bottom class="scroll">>></bottom>
       </div>
-    </header>
-    <main>
-      <section>
-        <div class="container">
-          <div class="company">
-            <div class="company__text">
-              <p>
-                За останні 5 років кількість дітей, які вміють користуватися
-                комп'ютером, збільшилася приблизно в 10 разів.
-              </p>
-              <p>
-                Як зазначає більшість дослідників, ці тенденції будуть
-                прискорюватися незалежно від шкільної освіти.
+    </section>
+    <!--  section description-->
+    <section>
+      <div class="container">
+        <div class="goit_description">
+          <p>
+            Програма навчання створюється за участі відомих спеціалістів IT
+            сектору, успішних стартаперів, бізнес-тренерів і підліткових
+            психологів.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--  fields section-->
+    <section class="section">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title-icon"></div>
+          <h2 class="section__title-text">
+            напрямки goiteens
+          </h2>
+        </div>
+        <ul class="fields">
+          <li class="fields__item">
+            <p class="fields__item-title">
+              Front-End
+            </p>
+            <p class="fields__item-description">
+              Створення веб-сайтів будь якої складності
+            </p>
+            <p class="fields__item-price">
+              13-15
+            </p>
+            <p class="fields__item-arrow">
+              &#8594;
+            </p>
+          </li>
+          <li class="fields__item">
+            <p class="fields__item-title">
+              Game Dev
+            </p>
+            <p class="fields__item-description">
+              Розробка власних комп’ютерних ігор
+            </p>
+            <p class="fields__item-price">
+              13-15
+            </p>
+            <p class="fields__item-arrow">
+              &#8594;
+            </p>
+          </li>
+          <li class="fields__item">
+            <p class="fields__item-title">
+              Smart Design
+            </p>
+            <p class="fields__item-description">
+              Опанування графічними редакторами
+            </p>
+            <p class="fields__item-price">
+              13-15
+            </p>
+            <p class="fields__item-arrow">
+              &#8594;
+            </p>
+          </li>
+          <li class="fields__item">
+            <p class="fields__item-title">
+              GoStart Kids
+            </p>
+            <p class="fields__item-description">
+              Мета: Вивчення базових технологій
+            </p>
+            <p class="fields__item-price">
+              13-15
+            </p>
+            <p class="fields__item-arrow">
+              &#8594;
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--services section-->
+    <section class="section">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title-icon"></div>
+          <h2 class="section__title-text">
+            як ми навчаємо
+          </h2>
+        </div>
+        <ul class="services">
+          <li class="services__item">
+            <div class="services__logo services__logo-globe"></div>
+            <p class="services__description">
+              Даємо можливість<br />
+              стати частиною першої підліткової ІТ-спільноти.
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__logo services__logo-hands"></div>
+            <p class="services__description">
+              Гарантуємо підтримку<br />
+              професійних розробників і викладачів
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__logo services__logo-hi"></div>
+            <p class="services__description">
+              Прокачуємо технічні<br />
+              навички в програмуванні ігор, веб сайтів і дизайні.
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__logo services__logo-money"></div>
+            <p class="services__description">
+              Показуємо можливі шляхи<br />
+              монетизації ідей.
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__logo services__logo-pencil"></div>
+            <p class="services__description">
+              Вчимо презентувати себе<br />
+              та свої творчі задуми.
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__logo services__logo-file"></div>
+            <p class="services__description">
+              Допомогаємо розробити<br />
+              власне портфоліо.
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__logo services__logo-aim"></div>
+            <p class="services__description">
+              Надаємо інтерактивний<br />
+              навчальний простір
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  section structure -->
+    <section class="section">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title-icon"></div>
+          <h2 class="section__title-text">
+            структура навчання
+          </h2>
+        </div>
+        <ul class="structure">
+          <li class="structure__item structure__item-tech">
+            <div class="structure__item-dash">
+              <p class="structure__title">1. Tech Skills</p>
+              <p class="structure__description">
+                Освоєння технічних навичок: вміння користуватись різними
+                програмами, вивчення різних мов кодування.
               </p>
             </div>
-            <!--        <div class="company__image">-->
-            <!--        </div>-->
-            <picture>
-              <source
-                srcset="images/kids-desktop.jpg"
-                media="(min-width: 1920px)"
-              />
-              <source
-                srcset="images/kids-tablet.jpg"
-                media="(min-width: 768px)"
-              />
-              <img src="images/kids-mobile.jpg" alt="kids" />
-            </picture>
-          </div>
+          </li>
+          <li class="structure__item structure__item-soft">
+            <div class="structure__item-dash">
+              <p class="structure__title">2. Soft Skills</p>
+              <p class="structure__description">
+                Self-building. Time Management. Effective Communication
+              </p>
+            </div>
+          </li>
+          <li class="structure__item structure__item-it">
+            <div class="structure__item-dash">
+              <p class="structure__title">3. IT English</p>
+              <p class="structure__description">
+                Вивчення розмовної англійської за допомогою Speaking Club
+              </p>
+            </div>
+          </li>
+          <li class="structure__item structure__item-hack">
+            <div class="structure__item-dash">
+              <p class="structure__title">4. Хакатон</p>
+              <p class="structure__description">
+                Дводенний Frontend марафон
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="page-footer">
+      <div class="contacts container">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="images/Logo.png" alt="site-logo" width="100" height="26" />
+          </a>
         </div>
-      </section>
-      <!--  section description-->
-      <section>
-        <div class="container">
-          <div class="goit_description">
-            <p>
-              Програма навчання створюється за участі відомих спеціалістів IT
-              сектору, успішних стартаперів, бізнес-тренерів і підліткових
-              психологів.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!--  fields section-->
-      <section class="section">
-        <div class="container">
-          <div class="section__title">
-            <div class="section__title-icon"></div>
-            <h2 class="section__title-text">
-              напрямки goiteens
-            </h2>
-          </div>
-          <ul class="fields">
-            <li class="fields__item">
-              <p class="fields__item-title">
-                Front-End
-              </p>
-              <p class="fields__item-description">
-                Створення веб-сайтів будь якої складності
-              </p>
-              <p class="fields__item-price">
-                13-15
-              </p>
-              <p class="fields__item-arrow">
-                &#8594;
-              </p>
-            </li>
-            <li class="fields__item">
-              <p class="fields__item-title">
-                Game Dev
-              </p>
-              <p class="fields__item-description">
-                Розробка власних комп’ютерних ігор
-              </p>
-              <p class="fields__item-price">
-                13-15
-              </p>
-              <p class="fields__item-arrow">
-                &#8594;
-              </p>
-            </li>
-            <li class="fields__item">
-              <p class="fields__item-title">
-                Smart Design
-              </p>
-              <p class="fields__item-description">
-                Опанування графічними редакторами
-              </p>
-              <p class="fields__item-price">
-                13-15
-              </p>
-              <p class="fields__item-arrow">
-                &#8594;
-              </p>
-            </li>
-            <li class="fields__item">
-              <p class="fields__item-title">
-                GoStart Kids
-              </p>
-              <p class="fields__item-description">
-                Мета: Вивчення базових технологій
-              </p>
-              <p class="fields__item-price">
-                13-15
-              </p>
-              <p class="fields__item-arrow">
-                &#8594;
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--services section-->
-      <section class="section">
-        <div class="container">
-          <div class="section__title">
-            <div class="section__title-icon"></div>
-            <h2 class="section__title-text">
-              як ми навчаємо
-            </h2>
-          </div>
-          <ul class="services">
-            <li class="services__item">
-              <div class="services__logo services__logo-globe"></div>
-              <p class="services__description">
-                Даємо можливість<br />
-                стати частиною першої підліткової ІТ-спільноти.
-              </p>
-            </li>
-            <li class="services__item">
-              <div class="services__logo services__logo-hands"></div>
-              <p class="services__description">
-                Гарантуємо підтримку<br />
-                професійних розробників і викладачів
-              </p>
-            </li>
-            <li class="services__item">
-              <div class="services__logo services__logo-hi"></div>
-              <p class="services__description">
-                Прокачуємо технічні<br />
-                навички в програмуванні ігор, веб сайтів і дизайні.
-              </p>
-            </li>
-            <li class="services__item">
-              <div class="services__logo services__logo-money"></div>
-              <p class="services__description">
-                Показуємо можливі шляхи<br />
-                монетизації ідей.
-              </p>
-            </li>
-            <li class="services__item">
-              <div class="services__logo services__logo-pencil"></div>
-              <p class="services__description">
-                Вчимо презентувати себе<br />
-                та свої творчі задуми.
-              </p>
-            </li>
-            <li class="services__item">
-              <div class="services__logo services__logo-file"></div>
-              <p class="services__description">
-                Допомогаємо розробити<br />
-                власне портфоліо.
-              </p>
-            </li>
-            <li class="services__item">
-              <div class="services__logo services__logo-aim"></div>
-              <p class="services__description">
-                Надаємо інтерактивний<br />
-                навчальний простір
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--  section structure -->
-      <section class="section">
-        <div class="container">
-          <div class="section__title">
-            <div class="section__title-icon"></div>
-            <h2 class="section__title-text">
-              структура навчання
-            </h2>
-          </div>
-          <ul class="structure">
-            <li class="structure__item structure__item-tech">
-              <div class="structure__item-dash">
-                <p class="structure__title">1. Tech Skills</p>
-                <p class="structure__description">
-                  Освоєння технічних навичок: вміння користуватись різними
-                  програмами, вивчення різних мов кодування.
-                </p>
-              </div>
-            </li>
-            <li class="structure__item structure__item-soft">
-              <div class="structure__item-dash">
-                <p class="structure__title">2. Soft Skills</p>
-                <p class="structure__description">
-                  Self-building. Time Management. Effective Communication
-                </p>
-              </div>
-            </li>
-            <li class="structure__item structure__item-it">
-              <div class="structure__item-dash">
-                <p class="structure__title">3. IT English</p>
-                <p class="structure__description">
-                  Вивчення розмовної англійської за допомогою Speaking Club
-                </p>
-              </div>
-            </li>
-            <li class="structure__item structure__item-hack">
-              <div class="structure__item-dash">
-                <p class="structure__title">4. Хакатон</p>
-                <p class="structure__description">
-                  Дводенний Frontend марафон
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="page-footer">
-        <div class="contacts container">
-          <div class="footer-logo">
-            <a href="#">
-              <img
-                src="images/Logo.png"
-                alt="site-logo"
-                width="100"
-                height="26"
-              />
-            </a>
-          </div>
+        <div class="contacts-info">
           <address class="page-adress">
             01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки
           </address>
@@ -297,28 +283,26 @@
             <li><a href="tel:+38 067 326 95 92">+38 067 326 95 92</a></li>
             <li><a href="tel:+38 050 366 17 77">+38 050 366 17 77</a></li>
           </ul>
-          <button class="footer-button">Залишити заявку</button>
-          <div class="socials-links">
-            <button
-              class="socials-links__icon socials-links__icon--telegram"
-            ></button>
-            <button
-              class="socials-links__icon  socials-links__icon--facebook"
-            ></button>
-            <button
-              class="socials-links__icon socials-links__icon--youtube"
-            ></button>
+          <div class="footer-nav">
+            <button class="footer-button">Залишити заявку</button>
+            <div class="socials-links">
+              <button class="socials-links__icon socials-links__icon--telegram"></button>
+              <button class="socials-links__icon  socials-links__icon--facebook"></button>
+              <button class="socials-links__icon socials-links__icon--youtube"></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-under">
-        <div class="footer-under__info container">
-          <p>Політика конфіденційності</p>
-          <p>Відмова від відповідальності</p>
-          <p>Згода з розсилкою</p>
-        </div>
+    </div>
+    <div class="footer-under">
+      <div class="footer-under__info container">
+        <a href="#" class="footer-under__link">Політика конфіденційності</a>
+        <a href="#" class="footer-under__link">Відмова від відповідальності</a>
+        <a href="#" class="footer-under__link">Згода з розсилкою</a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
 <!--TODO: fix BEM naming-->
