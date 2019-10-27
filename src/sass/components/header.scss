@@ -83,11 +83,10 @@ header {
 
 .mission__info {
   margin: 0 auto;
-  width: 281px;
-  height: 55px;
   background-color: rgba(22, 24, 32, 0.68);
   font-size: 16px;
-  padding-top: 10px;
+  max-width: 440px;
+  padding: 10px 0;
 }
 
 .mission__info a {
@@ -100,21 +99,27 @@ header {
 
 .scroll {
   position: absolute;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(50%);
   left: 50%;
   color: #ffffff;
-  font-size: 36px;
-  bottom: 10px;
+  font-weight: $second-font-stack;
+  font-size: 20px;
+  font-weight: 400;
+  bottom: 40px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .banner {
     background-image: url('../images/background-tablet.jpg');
     padding-bottom: 85px;
   }
+
+  .mission__info p {
+    font-size: 24px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .banner {
     background-image: url('../images/background-desktop.jpg');
     padding-bottom: 129px;
@@ -135,7 +140,7 @@ header {
       transform: translate(0);
       position: static;
       margin: 0 0 0 10px;
-
+      max-width: 400px;
       p {
         border-left: 1px solid $main-accent-color;
       }
@@ -163,7 +168,7 @@ header {
 
   .site-navigation__item {
     font-size: 16px;
-    margin: 0 20px;
+    margin: 0 14px;
     padding-bottom: 7px;
   }
 
@@ -171,6 +176,7 @@ header {
   .site-navigation__item:focus {
     border-bottom: 2px solid $main-accent-color;
   }
+
   .header-button {
     font-size: 14px;
     margin-top: 11px;

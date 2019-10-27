@@ -10,6 +10,7 @@
 
   <body>
     <header>
+      <!-- MODAL page -->
       <div class="modal">
         <nav class="modal-navigation">
           <div class="modal__img">
@@ -82,8 +83,12 @@
       <bottom class="scroll">>></bottom>
     </header>
     <main>
-      <section>
+      <!-- COMPANY section -->
+      <section class="mt">
         <div class="container">
+          <h2 class="visually-hidden">
+            About Company
+          </h2>
           <div class="company">
             <div class="company__text">
               <p class="company__quotes">
@@ -114,8 +119,11 @@
         </div>
       </section>
       <!--  section description-->
-      <section>
+      <section class="mt">
         <div class="container">
+          <h2 class="visually-hidden">
+            Description
+          </h2>
           <div class="goit_description">
             <p>
               Програма навчання створюється за участі відомих спеціалістів IT
@@ -125,11 +133,11 @@
           </div>
         </div>
       </section>
-      <!--  fields section-->
-      <section class="section">
+      <!--  FIELDS section-->
+      <section class="mt">
         <div class="container">
           <div class="section__title">
-            <div class="section__title-icon"></div>
+            <div class="section__title-icon section__title-fields"></div>
             <h2 class="section__title-text">
               напрямки goiteens
             </h2>
@@ -195,10 +203,10 @@
         </div>
       </section>
       <!--services section-->
-      <section class="section">
+      <section class="mt section-back">
         <div class="container">
           <div class="section__title">
-            <div class="section__title-icon"></div>
+            <div class="section__title-icon section__title-study"></div>
             <h2 class="section__title-text">
               як ми навчаємо
             </h2>
@@ -257,10 +265,10 @@
         </div>
       </section>
       <!--  section structure -->
-      <section class="section">
+      <section class="mt">
         <div class="container">
           <div class="section__title">
-            <div class="section__title-icon"></div>
+            <div class="section__title-icon section__title-structure"></div>
             <h2 class="section__title-text">
               структура навчання
             </h2>
@@ -305,9 +313,6 @@
     </main>
     <footer>
       <div class="page-footer">
-        <a href="#">
-          <div class="arrow arrow__image"></div>
-        </a>
         <div class="contacts container">
           <div class="footer-logo">
             <a href="#">
@@ -327,9 +332,9 @@
               <li>
                 <a href="mail:contact@goiteens.ua">contact@goiteens.ua</a>
               </li>
-              <li><a href="tel:+38 093 343 21 27">+38 093 343 21 27</a></li>
-              <li><a href="tel:+38 067 326 95 92">+38 067 326 95 92</a></li>
-              <li><a href="tel:+38 050 366 17 77">+38 050 366 17 77</a></li>
+              <li><a href="tel:+380933432127">+38 093 343 21 27</a></li>
+              <li><a href="tel:+380673269592">+38 067 326 95 92</a></li>
+              <li><a href="tel:+380503661777">+38 050 366 17 77</a></li>
             </ul>
             <div class="footer-nav">
               <button class="footer-button">Залишити заявку</button>
@@ -360,8 +365,11 @@
         </div>
       </div>
     </footer>
+    <a href="#">
+      <div class="arrow arrow__up">↑</div>
+    </a>
   </body>
-  <script type="text/javascript">
+  <script>
     document.querySelector('.burger').addEventListener('click', () => {
       document.querySelector('.modal').classList.add('isOpen');
     });

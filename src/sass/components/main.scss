@@ -1,6 +1,9 @@
 //SECTION company
+.mt {
+  margin-top: 80px;
+}
+
 .company {
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 
@@ -27,13 +30,14 @@
     font-family: $main-font-stack;
     color: #464646;
     font-size: 14px;
+    line-height: 1.75;
     font-weight: 400;
     letter-spacing: 1px;
     position: relative;
   }
 
-  &__text p:last-child {
-    margin-top: 10px;
+  &__text p:first-child {
+    margin-bottom: 10px;
   }
 }
 //goit section
@@ -42,7 +46,6 @@
   display: block;
   max-width: 100%;
   padding: 10px;
-  margin-top: 42px;
   border-radius: 10px;
   border: 1px solid transparent;
 
@@ -67,22 +70,38 @@
 }
 
 //section
+.section-back {
+  background-color: #fafafa;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 .section__title {
-  margin-top: 60px;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 .section__title-icon {
   content: '';
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: $main-accent-color;
-  background-image: url('../images/icon-fields.png');
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+.section__title-fields {
+  background-image: url('../images/icon-fields.png');
+}
+
+.section__title-study {
+  background-image: url('../images/icon-study.png');
+}
+
+.section__title-structure {
+  background-image: url('../images/icon-structure.png');
 }
 
 .section__title-text {
@@ -96,20 +115,20 @@
 .fields {
   margin-top: 40px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .fields__item {
   border-radius: 10px;
-  padding-left: 46px;
-  padding-right: 20px;
-  padding-bottom: 23px;
+  padding: 26px 20px 23px 46px;
   flex: 0 0 256px;
+  background-color: #fafafa;
   transition: background-color 0.3s linear;
+  border-left: 1px dotted #e3e3e4;
 }
 
 .fields__item-title {
-  margin-top: 26px;
   font-family: $main-font-stack;
   font-weight: 700;
   font-size: 25px;
@@ -162,11 +181,15 @@
 .services {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 
   &__item {
     border-radius: 10px;
     flex-basis: 280px;
     padding: 0px 23px 0px 46px;
+    border-left: 1px dotted #e3e3e4;
+    border-right: 1px dotted #e3e3e4;
   }
 
   &__description {
@@ -241,6 +264,7 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 60px;
+  justify-content: space-around;
 
   &__item {
     flex-basis: 280px;
@@ -266,7 +290,7 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     font-family: $main-font-stack;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.37;
     color: #464646;
     margin-top: 20px;
   }
@@ -298,10 +322,8 @@ $icons: globe, hands, hi, money, pencil, file, aim;
 
 // TABLET
 @media screen and (min-width: 768px) {
-  @media screen and (min-width: 1024px) {
-    .container {
-      padding: 0 2%;
-    }
+  .container {
+    padding: 0 2%;
   }
 
   .company {
@@ -309,7 +331,7 @@ $icons: globe, hands, hi, money, pencil, file, aim;
       font-size: 20px;
 
       &::before {
-        left: -28px;
+        left: -11px;
       }
     }
   }
@@ -320,8 +342,11 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     }
   }
 
+  .section-back {
+    padding-top: 116px;
+  }
+
   .goit_description {
-    height: 184px;
     padding: 40px;
 
     & p {
@@ -338,13 +363,9 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   }
 
   .fields {
-    justify-content: space-around;
-
     &__item {
-      padding-left: 27px;
-      padding-right: 33px;
-      flex-grow: 1;
-      // flex: 0 0 307px;
+      padding: 26px 20px 23px 46px;
+      flex-basis: 300px;
     }
 
     &__item-title {
@@ -363,13 +384,12 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     }
 
     &__description {
-      font-size: 16px;
+      font-size: 18px;
+      line-height: 1.6;
     }
   }
 
   .structure {
-    justify-content: space-between;
-
     &__item {
       flex-basis: 300px;
       height: 294px;
@@ -378,11 +398,19 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     &__item-dash {
       padding: 30px;
     }
+
+    &__title {
+      font-size: 30px;
+    }
   }
 }
 
 // DESKTOP
 @media screen and (min-width: 1024px) {
+  .mt {
+    margin-top: 120px;
+  }
+
   .company {
     flex-wrap: nowrap;
     flex-direction: row-reverse;
@@ -400,17 +428,25 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     }
   }
 
-  .section {
-    &__title {
-      margin-top: 150px;
-    }
-  }
   .goit_description {
-    padding: 60px;
+    padding: 65px;
 
     & p {
       font-size: 25px;
+      line-height: 1.4;
     }
+  }
+
+  .services {
+    justify-content: flex-start;
+  }
+
+  .fields {
+    justify-content: flex-start;
+  }
+
+  .structure {
+    justify-content: space-between;
   }
 }
 
@@ -434,12 +470,6 @@ $icons: globe, hands, hi, money, pencil, file, aim;
       @include center-flex();
       flex-direction: column;
       flex-basis: 500px;
-    }
-  }
-
-  .goit_description {
-    & p {
-      font-size: 25px;
     }
   }
 }

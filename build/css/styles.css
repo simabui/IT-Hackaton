@@ -428,10 +428,11 @@ html {
 }
 
 body {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #000;
   line-height: 1.2;
   font-size: 14px;
+  position: relative;
 }
 
 p {
@@ -455,8 +456,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="”checkbox”"].visually-hidden,
-input[type="”radio”"].visually-hidden {
+input[type='”checkbox”'].visually-hidden,
+input[type='”radio”'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -481,7 +482,7 @@ html {
 }
 
 body {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 img {
@@ -522,7 +523,7 @@ img {
 
 .modal-navigation__item {
   text-decoration: none;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 900;
   font-size: 25px;
   line-height: 60px;
@@ -623,7 +624,7 @@ header {
 
 .site-navigation__item {
   text-decoration: none;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 900;
   font-size: 25px;
   line-height: 60px;
@@ -658,15 +659,14 @@ header {
 
 .mission__info {
   margin: 0 auto;
-  width: 281px;
-  height: 55px;
   background-color: rgba(22, 24, 32, 0.68);
   font-size: 16px;
-  padding-top: 10px;
+  max-width: 440px;
+  padding: 10px 0;
 }
 
 .mission__info a {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #d49e37;
@@ -675,15 +675,20 @@ header {
 
 .scroll {
   position: absolute;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(50%);
   left: 50%;
   color: #ffffff;
-  font-size: 36px;
-  bottom: 10px;
+  font-weight: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  bottom: 40px;
+}
+
+.mt {
+  margin-top: 80px;
 }
 
 .company {
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -708,16 +713,17 @@ header {
 }
 
 .company__text p {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #464646;
   font-size: 14px;
+  line-height: 1.75;
   font-weight: 400;
   letter-spacing: 1px;
   position: relative;
 }
 
-.company__text p:last-child {
-  margin-top: 10px;
+.company__text p:first-child {
+  margin-bottom: 10px;
 }
 
 .goit_description {
@@ -725,13 +731,12 @@ header {
   display: block;
   max-width: 100%;
   padding: 10px;
-  margin-top: 42px;
   border-radius: 10px;
   border: 1px solid transparent;
 }
 
 .goit_description p {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -749,22 +754,38 @@ header {
   margin: 10px auto;
 }
 
+.section-back {
+  background-color: #fafafa;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 .section__title {
-  margin-top: 60px;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 .section__title-icon {
   content: '';
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: #fcae26;
-  background-image: url("../images/icon-fields.png");
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+.section__title-fields {
+  background-image: url("../images/icon-fields.png");
+}
+
+.section__title-study {
+  background-image: url("../images/icon-study.png");
+}
+
+.section__title-structure {
+  background-image: url("../images/icon-structure.png");
 }
 
 .section__title-text {
@@ -777,21 +798,21 @@ header {
 .fields {
   margin-top: 40px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .fields__item {
   border-radius: 10px;
-  padding-left: 46px;
-  padding-right: 20px;
-  padding-bottom: 23px;
+  padding: 26px 20px 23px 46px;
   flex: 0 0 256px;
+  background-color: #fafafa;
   transition: background-color 0.3s linear;
+  border-left: 1px dotted #e3e3e4;
 }
 
 .fields__item-title {
-  margin-top: 26px;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 25px;
   color: #272727;
@@ -799,7 +820,7 @@ header {
 
 .fields__item-description {
   margin-top: 30px;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #272727;
@@ -841,17 +862,21 @@ header {
 .services {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .services__item {
   border-radius: 10px;
   flex-basis: 280px;
   padding: 0px 23px 0px 46px;
+  border-left: 1px dotted #e3e3e4;
+  border-right: 1px dotted #e3e3e4;
 }
 
 .services__description {
   margin-top: 16px;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -937,6 +962,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 60px;
+  justify-content: space-around;
 }
 
 .structure__item {
@@ -955,16 +981,16 @@ header {
 }
 
 .structure__title {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 25px;
 }
 
 .structure__description {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   color: #464646;
   margin-top: 20px;
 }
@@ -1004,7 +1030,7 @@ header {
 .contacts {
   padding-left: 64px;
   padding-top: 42px;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   line-height: 25px;
   color: #9699a6;
@@ -1019,7 +1045,7 @@ header {
   font-size: 14px;
   line-height: 25px;
   color: #9699a6;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-decoration: none;
 }
 
@@ -1089,29 +1115,109 @@ header {
   color: #626263;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .banner {
     background-image: url("../images/background-tablet.jpg");
     padding-bottom: 85px;
   }
 
+  .mission__info p {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 0 2%;
+  }
+
+  .company__text p {
+    font-size: 20px;
+  }
+
+  .company__text p::before {
+    left: -11px;
+  }
+
+  .section__title-text {
+    font-size: 30px;
+  }
+
+  .section-back {
+    padding-top: 116px;
+  }
+
+  .goit_description {
+    padding: 40px;
+  }
+
+  .goit_description p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: left;
+    border-left: 5px #fcae26 solid;
+  }
+
+  .goit_description p::before {
+    display: none;
+  }
+
+  .fields__item {
+    padding: 26px 20px 23px 46px;
+    flex-basis: 300px;
+  }
+
+  .fields__item-title {
+    font-size: 30px;
+  }
+
+  .fields__item-price {
+    font-size: 40px;
+  }
+
+  .services__logo::before {
+    width: 70px;
+    height: 70px;
+  }
+
+  .services__description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .structure__item {
+    flex-basis: 300px;
+    height: 294px;
+  }
+
+  .structure__item-dash {
+    padding: 30px;
+  }
+
+  .structure__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
   .arrow {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333333;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
-    position: absolute;
-    right: 10%;
-    top: -10%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
   }
 
-  .arrow__image {
-    background-image: url(../images/arrow.png);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
+  .arrow__up {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
   }
 
   .page-footer {
@@ -1169,84 +1275,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1024px) {
-  .container {
-    padding: 0 2%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .company__text p {
-    font-size: 20px;
-  }
-
-  .company__text p::before {
-    left: -28px;
-  }
-
-  .section__title-text {
-    font-size: 30px;
-  }
-
-  .goit_description {
-    height: 184px;
-    padding: 40px;
-  }
-
-  .goit_description p {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    text-align: left;
-    border-left: 5px #fcae26 solid;
-  }
-
-  .goit_description p::before {
-    display: none;
-  }
-
-  .fields {
-    justify-content: space-around;
-  }
-
-  .fields__item {
-    padding-left: 27px;
-    padding-right: 33px;
-    flex-grow: 1;
-  }
-
-  .fields__item-title {
-    font-size: 30px;
-  }
-
-  .fields__item-price {
-    font-size: 40px;
-  }
-
-  .services__logo::before {
-    width: 70px;
-    height: 70px;
-  }
-
-  .services__description {
-    font-size: 16px;
-  }
-
-  .structure {
-    justify-content: space-between;
-  }
-
-  .structure__item {
-    flex-basis: 300px;
-    height: 294px;
-  }
-
-  .structure__item-dash {
-    padding: 30px;
-  }
-}
-
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .banner {
     background-image: url("../images/background-desktop.jpg");
     padding-bottom: 129px;
@@ -1266,6 +1295,7 @@ header {
     transform: translate(0);
     position: static;
     margin: 0 0 0 10px;
+    max-width: 400px;
   }
 
   .mission__info p {
@@ -1293,7 +1323,7 @@ header {
 
   .site-navigation__item {
     font-size: 16px;
-    margin: 0 20px;
+    margin: 0 14px;
     padding-bottom: 7px;
   }
 
@@ -1307,26 +1337,10 @@ header {
     margin-top: 11px;
   }
 
-  .contacts {
-    width: 100%;
+  .mt {
+    margin-top: 120px;
   }
 
-  .footer-logo {
-    padding-top: 53px;
-  }
-
-  .contacts-info {
-    width: 100%;
-  }
-
-  .footer-nav {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 1024px) {
   .company {
     flex-wrap: nowrap;
     flex-direction: row-reverse;
@@ -1346,16 +1360,45 @@ header {
     flex-basis: 400px;
   }
 
-  .section__title {
-    margin-top: 150px;
-  }
-
   .goit_description {
-    padding: 60px;
+    padding: 65px;
   }
 
   .goit_description p {
     font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .services {
+    justify-content: flex-start;
+  }
+
+  .fields {
+    justify-content: flex-start;
+  }
+
+  .structure {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts {
+    width: 100%;
+  }
+
+  .footer-logo {
+    padding-top: 53px;
+  }
+
+  .contacts-info {
+    width: 100%;
+  }
+
+  .footer-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -1381,10 +1424,6 @@ header {
     align-items: center;
     flex-direction: column;
     flex-basis: 500px;
-  }
-
-  .goit_description p {
-    font-size: 25px;
   }
 }
 
@@ -1421,9 +1460,5 @@ header {
 
   .services__logo-aim::before {
     background-image: url(../images/services/services-aim@2x.png);
-  }
-
-  .arrow {
-    background-image: url(../images/arrow@2x.png);
   }
 }
