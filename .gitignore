@@ -2,7 +2,7 @@
 node_modules
 
 #build folder
-build
+# build
 =======
 # Logs
 logs

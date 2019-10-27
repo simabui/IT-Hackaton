@@ -1,8 +1,12 @@
+header {
+  position: relative;
+}
+
 .banner {
   display: block;
   position: relative;
   width: 100%;
-  min-height: 560px;
+  padding-bottom: 131px;
   background-image: url(../images/hbackground-mobile.jpg);
   background-size: cover;
 }
@@ -52,7 +56,7 @@
 }
 
 .header-button {
-  width: 192px;
+  max-width: 192px;
   height: 43px;
   font-size: 16px;
   font-family: $second-font-stack;
@@ -63,24 +67,22 @@
   background-color: #e9ac38;
 }
 
-.banner-title {
+.mission {
   position: relative;
   font-family: $second-font-stack;
   color: #ffffff;
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 275px;
+  margin-top: 285px;
 }
 
 .title {
   font-size: 35px;
 }
 
-.banner-info {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.mission__info {
+  margin: 0 auto;
   width: 281px;
   height: 55px;
   background-color: rgba(22, 24, 32, 0.68);
@@ -88,7 +90,7 @@
   padding-top: 10px;
 }
 
-.banner-info a {
+.mission__info a {
   font-family: $main-font-stack;
   font-weight: 700;
   text-decoration: none;
@@ -100,21 +102,44 @@
   position: absolute;
   transform: rotate(90deg);
   left: 50%;
-  transform: translateX(-50%);
   color: #ffffff;
   font-size: 36px;
-  bottom: 50px;
+  bottom: 10px;
 }
 
 @media (min-width: 768px) {
   .banner {
-    background-image: url(../images/background-tablet.jpg);
+    background-image: url('../images/background-tablet.jpg');
+    padding-bottom: 85px;
   }
 }
 
 @media (min-width: 1024px) {
   .banner {
-    background-image: url(../images/background.jpg);
+    background-image: url('../images/background-desktop.jpg');
+    padding-bottom: 129px;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .mission {
+    &__title {
+      text-align: left;
+      font-size: 65px;
+      margin: 10px;
+    }
+
+    &__info {
+      transform: translate(0);
+      position: static;
+      margin: 0 0 0 10px;
+
+      p {
+        border-left: 1px solid $main-accent-color;
+      }
+    }
   }
 
   .burger {
@@ -122,7 +147,8 @@
   }
 
   .site-logo {
-    margin-left: 42px;
+    margin-left: 22px;
+    margin-top: 12px;
   }
 
   .site-navigation {
@@ -137,10 +163,22 @@
 
   .site-navigation__item {
     font-size: 16px;
-    padding: 0 20px;
+    margin: 0 20px;
+    padding-bottom: 7px;
   }
 
+  .site-navigation__item:hover,
+  .site-navigation__item:focus {
+    border-bottom: 2px solid $main-accent-color;
+  }
   .header-button {
+    font-size: 14px;
     margin-top: 11px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url('../images/background@2x.jpg');
   }
 }

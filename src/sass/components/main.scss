@@ -386,7 +386,7 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   .company {
     flex-wrap: nowrap;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &__image {
       margin-top: 0;
@@ -400,6 +400,11 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     }
   }
 
+  .section {
+    &__title {
+      margin-top: 150px;
+    }
+  }
   .goit_description {
     padding: 60px;
 
