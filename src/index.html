@@ -7,7 +7,6 @@
     <title>GOITeens</title>
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
-
   <body>
     <header>
       <div class="banner">
@@ -60,7 +59,7 @@
         <div class="container">
           <div class="company">
             <div class="company__text">
-              <p>
+              <p class="company__quotes">
                 За останні 5 років кількість дітей, які вміють користуватися
                 комп'ютером, збільшилася приблизно в 10 разів.
               </p>
@@ -69,16 +68,14 @@
                 прискорюватися незалежно від шкільної освіти.
               </p>
             </div>
-            <!--        <div class="company__image">-->
-            <!--        </div>-->
-            <picture>
+            <picture class="company__image">
               <source
                 srcset="images/kids-desktop.jpg"
-                media="(min-width: 1920px)"
+                media="(min-width: 768px)"
               />
               <source
                 srcset="images/kids-tablet.jpg"
-                media="(min-width: 768px)"
+                media="(min-width: 460px)"
               />
               <img src="images/kids-mobile.jpg" alt="kids" />
             </picture>
@@ -288,26 +285,32 @@
               />
             </a>
           </div>
-          <address class="page-adress">
-            01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки
-          </address>
-          <ul class="contacts-list">
-            <li><a href="mail:contact@goiteens.ua">contact@goiteens.ua</a></li>
-            <li><a href="tel:+38 093 343 21 27">+38 093 343 21 27</a></li>
-            <li><a href="tel:+38 067 326 95 92">+38 067 326 95 92</a></li>
-            <li><a href="tel:+38 050 366 17 77">+38 050 366 17 77</a></li>
-          </ul>
-          <button class="footer-button">Залишити заявку</button>
-          <div class="socials-links">
-            <button
-              class="socials-links__icon socials-links__icon--telegram"
-            ></button>
-            <button
-              class="socials-links__icon  socials-links__icon--facebook"
-            ></button>
-            <button
-              class="socials-links__icon socials-links__icon--youtube"
-            ></button>
+          <div class="contacts-info">
+            <address class="page-adress">
+              01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки
+            </address>
+            <ul class="contacts-list">
+              <li>
+                <a href="mail:contact@goiteens.ua">contact@goiteens.ua</a>
+              </li>
+              <li><a href="tel:+38 093 343 21 27">+38 093 343 21 27</a></li>
+              <li><a href="tel:+38 067 326 95 92">+38 067 326 95 92</a></li>
+              <li><a href="tel:+38 050 366 17 77">+38 050 366 17 77</a></li>
+            </ul>
+            <div class="footer-nav">
+              <button class="footer-button">Залишити заявку</button>
+              <div class="socials-links">
+                <button
+                  class="socials-links__icon socials-links__icon--telegram"
+                ></button>
+                <button
+                  class="socials-links__icon  socials-links__icon--facebook"
+                ></button>
+                <button
+                  class="socials-links__icon socials-links__icon--youtube"
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -321,4 +324,3 @@
     </footer>
   </body>
 </html>
-<!--TODO: fix BEM naming-->

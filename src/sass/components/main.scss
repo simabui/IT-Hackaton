@@ -3,27 +3,25 @@
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 
-  &::before {
-    content: '\201C';
-    display: block;
-    font-family: 'Proxima Nova', sans-serif;
-    color: $main-accent-color;
-    font-size: 60px;
-    line-height: 1.2;
-    position: absolute;
-    top: -40px;
+  &__image {
+    margin-top: 20px;
   }
 
-  //&__image {
-  //  margin-top: 20px;
-  //  width: 280px;
-  //  height: 320px;
-  //  border-radius: 10px;
-  //  background-image: url(../images/kids.jpg);
-  //  background-size: cover;
-  //}
+  &__quotes {
+    position: relative;
+
+    &::before {
+      content: '\201C';
+      display: block;
+      font-family: 'Proxima Nova', sans-serif;
+      color: $main-accent-color;
+      font-size: 60px;
+      line-height: 1.2;
+      position: absolute;
+      top: -40px;
+    }
+  }
 
   &__text p {
     font-family: $main-font-stack;
@@ -31,6 +29,7 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
+    position: relative;
   }
 
   &__text p:last-child {
@@ -42,7 +41,7 @@
   background-color: #7550de;
   display: block;
   max-width: 100%;
-  height: 232px;
+  padding: 10px;
   margin-top: 42px;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -50,6 +49,7 @@
   & p {
     font-family: $main-font-stack;
     font-size: 18px;
+    font-weight: 400;
     line-height: 24px;
     color: #fff;
     padding: 0 15px 0 19px;
@@ -58,11 +58,11 @@
 
   & p:before {
     content: '';
-    display: flex;
+    display: block;
     width: 60px;
     height: 2px;
     background-color: $main-accent-color;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 }
 
@@ -102,7 +102,9 @@
 .fields__item {
   border-radius: 10px;
   padding-left: 46px;
+  padding-right: 20px;
   padding-bottom: 23px;
+  flex: 0 0 256px;
 }
 
 .fields__item-title {
@@ -129,6 +131,7 @@
   color: $main-accent-color;
   position: relative;
 }
+
 .fields__item-price::after {
   content: 'років';
   font-size: 13px;
@@ -196,21 +199,27 @@
   &-hands::before {
     background-color: rgba(248, 224, 215, 0.7);
   }
+
   &-hi::before {
     background-color: rgba(227, 220, 248, 0.7);
   }
+
   &-money::before {
     background-color: rgba(223, 238, 236, 0.7);
   }
+
   &-hands::before {
     background-color: rgba(248, 224, 215, 0.7);
   }
+
   &-pencil::before {
     background-color: rgba(227, 220, 248, 0.7);
   }
+
   &-file::before {
     background-color: rgba(248, 224, 215, 0.7);
   }
+
   &-aim::before {
     background-color: rgba(251, 238, 215, 0.7);
   }
@@ -284,4 +293,141 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   border-bottom-left-radius: 30px;
   padding: 20px;
   height: 227px;
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
+    .container {
+      padding: 0 2%;
+    }
+  }
+
+  .company {
+    &__text p {
+      font-size: 20px;
+
+      &::before {
+        left: -28px;
+      }
+    }
+  }
+
+  .section {
+    &__title-text {
+      font-size: 30px;
+    }
+  }
+
+  .goit_description {
+    height: 184px;
+    padding: 40px;
+
+    & p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 400;
+      text-align: left;
+      border-left: 5px $main-accent-color solid;
+    }
+
+    & p::before {
+      display: none;
+    }
+  }
+
+  .fields {
+    &__item {
+      padding-left: 27px;
+      flex: 0 0 307px;
+    }
+
+    &__item-title {
+      font-size: 30px;
+    }
+
+    &__item-price {
+      font-size: 40px;
+    }
+  }
+
+  .services {
+    &__logo::before {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+  .structure {
+    justify-content: space-between;
+
+    &__item {
+      flex-basis: 300px;
+      height: 294px;
+    }
+
+    &__item-dash {
+      padding: 30px;
+    }
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1024px) {
+  .company {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &__image {
+      margin-top: 0;
+      flex-basis: 500px;
+    }
+
+    &__text {
+      @include center-flex();
+      flex-direction: column;
+      flex-basis: 400px;
+    }
+  }
+
+  .goit_description {
+    & p {
+      font-size: 25px;
+    }
+  }
+}
+
+// DESKTOP XL
+@media screen and (min-width: 1234px) {
+  .container {
+    padding: 0;
+  }
+
+  .company {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &__image {
+      margin-top: 0;
+      flex-basis: 650px;
+    }
+
+    &__text {
+      @include center-flex();
+      flex-direction: column;
+      flex-basis: 500px;
+    }
+  }
+
+  .goit_description {
+    & p {
+      font-size: 25px;
+    }
+  }
 }
