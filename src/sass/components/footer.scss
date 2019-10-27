@@ -135,18 +135,38 @@
   .socials-links__icon--telegram {
     margin-left: 20px;
   }
+
+  .footer-under {
+    min-height: 49px;
+  }
+
+  .footer-under__info {
+    width: 576px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-under__link {
+    display: block;
+  }
 }
 
-.footer-under {
-  min-height: 49px;
-}
+@media (min-width: 1900px) {
+  .contacts {
+    width: 1234px;
+  }
 
-.footer-under__info {
-  display: flex;
-  flex-direction: row;
-}
+  .footer-logo {
+    padding-top: 53px;
+  }
 
-.footer-under__link {
-  display: block;
-  width: 210px;
+  .contacts-info {
+    width: 1234px;
+  }
+
+  .footer-nav {
+    width: 518px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
