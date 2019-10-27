@@ -50,8 +50,11 @@
   margin-bottom: 4px;
 }
 
+.site-navigation {
+  display: none;
+}
+
 .site-navigation__list {
-  // display: none;
   display: block;
   width: 200px;
   left: 50%;
@@ -71,7 +74,6 @@
 }
 
 .header-button {
-  // display: none;
   width: 192px;
   height: 43px;
   font-size: 16px;
