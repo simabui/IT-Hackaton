@@ -4,7 +4,7 @@
 @import 'helpers/mixins.scss';
 @import './normalize';
 @import './base';
-//TODO: double quotes, base fz, box shadow, hover filter
+//TODO: double quotes, base fz
 .container {
   max-width: 1234px;
   padding: 0 20px;
@@ -20,19 +20,21 @@
   background-size: cover;
 }
 
-.banner-menu {
+.site-navigation {
   display: flex;
-  position: relative;
   font-family: $second-font-stack;
   justify-content: space-between;
   padding-top: 10px;
 }
 
-.burger {
+.checkbox {
   position: absolute;
   background-color: transparent;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  //align-items: space-between;
   right: 0;
   transform: translateX(-20px);
   border: none;
@@ -40,49 +42,23 @@
   height: 20px;
 }
 
-.burger__menu {
+.checkbox__menu {
   width: 29px;
   height: 4px;
   background-color: #fff;
 }
 
-.burger__menu:not(:last-child) {
+.checkbox__menu:not(:last-child) {
   margin-bottom: 4px;
 }
 
-.site-navigation {
-  display: none;
-}
-
 .site-navigation__list {
-  display: block;
-  width: 200px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: none;
   list-style: none;
-  position: absolute;
-  text-align: center;
-}
-
-.site-navigation__item {
-  text-decoration: none;
-  font-family: $main-font-stack;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 60px;
-  color: #ffffff;
 }
 
 .header-button {
-  width: 192px;
-  height: 43px;
-  font-size: 16px;
-  font-family: $second-font-stack;
-  color: #f6f9fa;
-  font-weight: 800;
-  border: none;
-  border-radius: 5px;
-  background-color: #e9ac38;
+  display: none;
 }
 
 .banner-title {
@@ -287,6 +263,21 @@
 .services {
   display: flex;
   flex-wrap: wrap;
+
+  &__item {
+    border-radius: 10px;
+    flex-basis: 280px;
+    padding: 0px 23px 0px 46px;
+  }
+
+  &__description {
+    margin-top: 16px;
+    font-family: $main-font-stack;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464646;
+  }
 }
 
 .services__logo {
@@ -338,19 +329,7 @@ $icons: globe, hands, hi, money, pencil, file, aim;
   '../images/services/services-',
   png
 );
-.services__item {
-  border-radius: 10px;
-  flex-basis: 280px;
-  padding: 0px 23px 0px 46px;
-}
-.services__description {
-  margin-top: 16px;
-  font-family: $main-font-stack;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #464646;
-}
+
 //structure section
 
 .structure {
@@ -365,6 +344,11 @@ $icons: globe, hands, hi, money, pencil, file, aim;
     height: 258px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__item:hover {
+    filter: brightness(105%);
   }
 
   &__title {
