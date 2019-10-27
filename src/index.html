@@ -10,7 +10,7 @@
 
   <body>
     <header>
-        <div class="modal">
+        <div class="modal isOpen">
             <nav class="modal-navigation">
                 <div class="modal__img">
                     <img src="images/Logo.png" alt="logo">
@@ -354,6 +354,14 @@
           <a href="#" class="footer-under__link">Згода з розсилкою</a>
         </div>
       </div>
+      <script type="text/javascript">
+      document.querySelector('.burger').addEventListener('click', () => {
+        document.querySelector('.modal').classList.add('isOpen');
+      });
+      document.querySelector('.modal__close').addEventListener('click', () => {
+        document.querySelector('.modal').classList.remove('isOpen');
+      });
+      </script>
     </footer>
   </body>
 </html>

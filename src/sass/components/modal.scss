@@ -1,24 +1,25 @@
 .modal {
   position: absolute;
   z-index: 999;
+  display: none;
+  width: 100%;
+}
+
+.isOpen {
   display: block;
 }
 
 .modal-navigation {
   height: 569px;
   background-color: #824fe3;
-  position: relative;
+  padding-top: 50px;
 }
 
 .modal-navigation__list {
-  display: block;
   width: 200px;
-  left: 50%;
-  transform: translateX(-50%);
   list-style: none;
-  position: absolute;
   text-align: center;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .modal-navigation__item {
@@ -47,7 +48,7 @@
   display: block;
   position: absolute;
   right: 40px;
-  top: 40px;
+  top: 48px;
 
   &-line {
     display: block;
