@@ -172,7 +172,7 @@
 
 @media (min-width: 1024px) {
   .contacts {
-    width: 1024px;
+    width: 100%;
   }
 
   .footer-logo {
@@ -180,11 +180,11 @@
   }
 
   .contacts-info {
-    width: 1234px;
+    width: 100%;
   }
 
   .footer-nav {
-    width: 518px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
   }

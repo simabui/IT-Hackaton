@@ -37,7 +37,7 @@
 }
 
 .site-navigation__list {
-  display: block;
+  display: none;
   width: 200px;
   left: 50%;
   transform: translateX(-50%);
@@ -126,12 +126,12 @@
   }
 
   .site-navigation {
-    width: 1060px;
+    width: 56%;
     display: flex;
   }
 
   .site-navigation__list {
-    width: 1030px;
+    width: 56%;
     display: flex;
     justify-content: space-between;
   }
