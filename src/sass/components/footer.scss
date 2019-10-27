@@ -96,6 +96,25 @@
 }
 
 @media (min-width: 768px) {
+  .arrow {
+    display: block;
+    background-color: #333333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 20px;
+    top: -20px;
+  }
+
+  .arrow__image {
+    background-image: url(../images/arrow.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .page-footer {
     min-height: 254px;
   }
@@ -151,9 +170,9 @@
   }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1024px) {
   .contacts {
-    width: 1234px;
+    width: 1024px;
   }
 
   .footer-logo {
@@ -168,5 +187,11 @@
     width: 518px;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .arrow {
+    background-image: url(../images/arrow@2x.png);
   }
 }
