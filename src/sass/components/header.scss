@@ -10,7 +10,6 @@
 .banner-menu {
   display: flex;
   position: relative;
-  font-family: $second-font-stack;
   justify-content: space-between;
   padding-top: 10px;
 }
@@ -27,14 +26,6 @@
   height: 20px;
 }
 
-// .burger-menu {
-//   display: flex;
-//   position: relative;
-//   font-family: $second-font-stack;
-//   justify-content: space-between;
-//   padding-top: 10px;
-// }
-
 .burger__menu {
   width: 29px;
   height: 4px;
@@ -43,10 +34,6 @@
 
 .burger__menu:not(:last-child) {
   margin-bottom: 4px;
-}
-
-.site-navigation {
-  display: none;
 }
 
 .site-navigation__list {
@@ -124,3 +111,32 @@
 }
 
 @media (min-width: 768px) {
+  .banner {
+    background-image: url(../images/background-tablet.jpg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    background-image: url(../images/background.jpg);
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .site-navigation {
+    width: 1060px;
+    display: flex;
+  }
+
+  .site-navigation__list {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-navigation__item {
+    font-size: 16px;
+  }
+}
