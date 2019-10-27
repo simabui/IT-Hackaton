@@ -82,7 +82,7 @@ header {
   margin-top: 285px;
 }
 
-.title {
+.mission__title {
   font-size: 35px;
 }
 
@@ -122,6 +122,10 @@ header {
   .mission__info p {
     font-size: 24px;
   }
+
+  .mission__title {
+    font-size: 45px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -146,6 +150,7 @@ header {
       position: static;
       margin: 0 0 0 10px;
       max-width: 400px;
+
       p {
         border-left: 1px solid $main-accent-color;
       }
